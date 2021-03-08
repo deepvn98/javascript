@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--<button type="button" onclick="oneCheck()" >click here</button>-->
+<!--<div id="ten" ></div>-->
+<!--    <button type="button" onclick="kickMe()">kick me</button>-->
+<!--<button type="button" onclick="kickMe">Click Here</button>-->
+<select name="name" id="ten" onchange="tuoi()">
+    <option value="Hà Nội"> Hà Nội</option>
+    <option value="Lào Cai">Lào Cai</option>
+    <option value="Bắc Ninh">Bắc Ninh</option>
+    <option value="Bắc Giang">Bắc Giang</option>
+</select>
+</body>
+</html>
+<!--<script>-->
+<!--// function oneCheck(){-->
+<!--//     alert("hello world!")-->
+<!--// }-->
+<!--</script>-->
+<!--<script>-->
+<!--function kickMe(){-->
+<!--    document.getElementById("ten").innerHTML ="hello World!"-->
+<!--}-->
+<!--</script>-->
+<!--<script>-->
+<!--    function kickMe(){-->
+<!--        document.write("xin chào!");-->
+<!--    }-->
+<!--</script>-->
+<script>
+    function tuoi(){
+        var tuoi1 = document.getElementById("ten").value;
+        alert(tuoi1)
+    }
+</script>
