@@ -4,56 +4,54 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <style>
-        form{
-
-
+        input{
+            font-size:20px;
         }
-        input{ font-size: 30px;
-
+        select{
+            font-size: 20px; width: 150px;
         }
-        option{
-            width: 100px;
+        button{
+            font-size: 20px;
         }
-
     </style>
 </head>
 <body>
-<div>
-<form action="">
+<table>
+    <tr>
+        <th><h2>Amount</h2></th>
+        <th><h2>From Currency</h2></th>
+        <th><h2>To Currency</h2></th>
+        <th></th>
+    </tr>
+    <tr>
+        <td><input type="number" id="ad"></td>
 
-    <fieldset>
-      <legend style="font-size: 30px">Chuyển Đổi Tiền Tệ </legend>
-        <table>
-        <tr>
-            <th>Amount</th>
-            <th>From currency</th>
-            <th>To Currency</th>
-        </tr>
-       <tr>
-           <td><input type="number"id="a"></td>
-           <td><select id="a1">
-               <option value="23000">USD</option>
-               <option value="1">VND</option>
-           </select></td>
-           <td> <select id="a2">
-               <option value="23000">USD</option>
-               <option value="1">VND</option>
-           </select></td>
-       </tr>
-        </table>
-        <button onclick="click()">Convert</button>
-        <p id="ketqua"></p>
-    </fieldset>
-</form>
-</div>
+        <td>
+            <select id="name">
+            <option value="1">USD</option>
+            <option value="23000">VND</option>
+             </select>
+        </td>
+
+        <td>
+            <select id="name1">
+                <option value="1">USD</option>
+                <option value="23000">VND</option>
+            </select>
+        </td>
+        <td><button type="button" onclick="lick()">convert</button></td>
+    </tr>
+<p><h1 id="ketqua">Result:</h1></p>
+    </table>
+
 </body>
 </html>
 <script>
-    function click(){
-        var b = document.getElementById("a").value;
-        var b1 = document.getElementById("a1").value;
-        var b2 = document.getElementById("a2").value;
-        var c =b*b1/b2
-        document.getElementById("ketqua").innerHTML= "result:" + c
-    }
+    function lick(){
+    var a = document.getElementById("ad").value;
+    var b = document.getElementById("name1").value;
+    var c = document.getElementById("name").value;
+    var d = a*b/c
+    document.getElementById("ketqua").innerHTML="số tiền:" +d;
+}
 </script>
