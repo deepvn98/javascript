@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    <fieldset>
+        <legend><h1>Cuaculator</h1></legend>
+<!--        the nhap so-->
+        <input type="number" id="so1">
+        <input type="number" id="so2">
+        <br><br><br>
+<!--        cac nut an phep tinh-->
+        <button type="button" onclick="cong()">Cong</button>
+        <button type="button" onclick="tru()">tru</button>
+        <button type="button" onclick="nhan()">nhan</button>
+        <button type="button" onclick="chia()">chia</button>
+        <br><br><br>
+        <P id="ketqua"></P>
+    </fieldset>
+</form>
+
+</body>
+</html>
+<!--the script cho form may tinh-->
+<script>
+
+        function cong() {
+            let a = +document.getElementById("so1").value;
+            let b = +document.getElementById("so2").value;
+            let c = a + b
+            document.getElementById("ketqua").innerHTML = "Result Division:" + c
+        }
+
+        function tru() {
+            let a = +document.getElementById("so1").value;
+            let b = +document.getElementById("so2").value;
+            let c = a - b
+            document.getElementById("ketqua").innerHTML = "Result Division:" + c
+        }
+
+
+        function nhan() {
+            let a = +document.getElementById("so1").value;
+            let b = +document.getElementById("so2").value;
+            let c = a * b
+            document.getElementById("ketqua").innerHTML = "Result Division:" + c
+        }
+
+        function chia() {
+            let a = +document.getElementById("so1").value;
+            let b = +document.getElementById("so2").value;
+            let c = a / b
+            document.getElementById("ketqua").innerHTML = "Result Division:" + c
+        }
+</script>

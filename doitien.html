@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        form{
+
+
+        }
+        input{ font-size: 30px;
+
+        }
+        option{
+            width: 100px;
+        }
+
+    </style>
+</head>
+<body>
+<div>
+<form action="">
+
+    <fieldset>
+      <legend style="font-size: 30px">Chuyển Đổi Tiền Tệ </legend>
+        <table>
+        <tr>
+            <th>Amount</th>
+            <th>From currency</th>
+            <th>To Currency</th>
+        </tr>
+       <tr>
+           <td><input type="number"id="a"></td>
+           <td><select id="a1">
+               <option value="23000">USD</option>
+               <option value="1">VND</option>
+           </select></td>
+           <td> <select id="a2">
+               <option value="23000">USD</option>
+               <option value="1">VND</option>
+           </select></td>
+       </tr>
+        </table>
+        <button onclick="click()">Convert</button>
+        <p id="ketqua"></p>
+    </fieldset>
+</form>
+</div>
+</body>
+</html>
+<script>
+    function click(){
+        var b = document.getElementById("a").value;
+        var b1 = document.getElementById("a1").value;
+        var b2 = document.getElementById("a2").value;
+        var c =b*b1/b2
+        document.getElementById("ketqua").innerHTML= "result:" + c
+    }
+</script>
