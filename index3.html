@@ -16,6 +16,7 @@
     <option value="Bắc Ninh">Bắc Ninh</option>
     <option value="Bắc Giang">Bắc Giang</option>
 </select>
+<h3 id="total"></h3>
 </body>
 </html>
 <!--<script>-->
@@ -40,12 +41,13 @@
 <!--    }-->
 <!--</script>-->
 <script>
-    var tuoi = document.getElementById("ten");
-    tuoi.addEventListener("change", tuoi1);
-    function tuoi1(){
-        alert(tuoi.value)
+    var thanhPho = document.getElementById("ten");
+    thanhPho.addEventListener("change", thanhPho2);
+    function thanhPho2(){
+        alert(thanhPho.value)
     }
 </script>
+<!-- bên dưới là bắt sự kiện mouseover. mouseout-->
 <script>
     var anh = document.getElementById("demo");
     anh.addEventListener("mouseover",change)
@@ -57,4 +59,11 @@ function change(){
 function  changed(){
         document.getElementById("demo").style.color="black";
 }
+</script>
+<!-- bên dưới là tính tổng hai số -->
+<script>
+    var a = 2;
+    var b = 5;
+    var c= a + b
+    document.getElementById("total").innerText = c
 </script>
