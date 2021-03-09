@@ -5,11 +5,12 @@
     <title>Title</title>
 </head>
 <body>
+<p id="demo">đưa chuột vào đây bạn sec thấy sự thay đổi</p>
 <!--<button type="button" onclick="oneCheck()" >click here</button>-->
 <!--<div id="ten" ></div>-->
 <!--    <button type="button" onclick="kickMe()">kick me</button>-->
 <!--<button type="button" onclick="kickMe">Click Here</button>-->
-<select name="name" id="ten" onchange="tuoi()">
+<select name="name" id="ten">
     <option value="Hà Nội"> Hà Nội</option>
     <option value="Lào Cai">Lào Cai</option>
     <option value="Bắc Ninh">Bắc Ninh</option>
@@ -32,9 +33,28 @@
 <!--        document.write("xin chào!");-->
 <!--    }-->
 <!--</script>-->
+<!--<script>-->
+<!--    function tuoi(){-->
+<!--        var tuoi1 = document.getElementById("ten").value;-->
+<!--        alert(tuoi1)-->
+<!--    }-->
+<!--</script>-->
 <script>
-    function tuoi(){
-        var tuoi1 = document.getElementById("ten").value;
-        alert(tuoi1)
+    var tuoi = document.getElementById("ten");
+    tuoi.addEventListener("change", tuoi1);
+    function tuoi1(){
+        alert(tuoi.value)
     }
+</script>
+<script>
+    var anh = document.getElementById("demo");
+    anh.addEventListener("mouseover",change)
+    anh.addEventListener("mouseout",changed)
+function change(){
+    document.getElementById("demo").style.color="red"
+
+    }
+function  changed(){
+        document.getElementById("demo").style.color="black";
+}
 </script>
