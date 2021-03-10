@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        select{
+            width: 60px;height: 45px;
+        }
+        input{
+            width: 100px;height: 40px;
+        }
+        td{
+            width: 100px;
+        }
+        button{
+            width: 60px;
+            height: 40px;
+        }
+
+
+    </style>
+</head>
+<body>
+
+<table width="60%">
+    <caption><h1>Bảng Điểm</h1></caption>
+    <tr>
+        <th><h2>Toán</h2></th>
+        <th><h2>Lý</h2></th>
+        <th><h2>Hoá</h2></th>
+        <td><h2>Tính Điểm</h2>/</td>
+    </tr>
+<!--Nhập điểm số  -->
+    <tr>
+        <td><input type="number" id="toan"></td>
+        <td><input type="number" id="ly"></td>
+        <td><input type="number" id="hoa"></td>
+        <td><select id="diem">
+            <option name="Tổng">Tổng Điểm</option>
+            <option name="TB">Điểm TB</option>
+        </select>
+        </td>
+    </tr>
+    <tr>
+        <td><button type="button" onclick="myFunction()">Tính Điểm</button></td>
+        <td><h3 id="ketqua">Kết Quả:</h3></td>
+    </tr>
+
+</table>
+
+</body>
+<script>
+    function myFunction(){
+        var a = +document.getElementById("toan").value;
+        var b = +document.getElementById("ly").value;
+        var c = +document.getElementById("hoa").value;
+        if ("d") {
+            var d = a + b + c;
+            document.getElementById("ketqua").innerHTML = "Điểm tổng:" + d
+        } else("e")
+        {
+            var e = a + b + c / 3;
+            document.getElementById("ketqua").innerHTML = "Điểm TRung Bình" + e
+        }
+    }
+</script>
+</html>
